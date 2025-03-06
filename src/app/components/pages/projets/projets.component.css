@@ -1,0 +1,72 @@
+/* Styles généraux */
+
+/* Conteneur principal */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+/* Effet sous le titre */
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: #e67e22;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Cartes de projet */
+.project-card {
+  display: block;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu des cartes */
+.project-card .experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-card strong {
+  font-size: 20px;
+  color: #e67e22; /* Orange */
+}
+
+.project-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+.project-card:hover p {
+  color: #d35400; /* Orange foncé */
+}
